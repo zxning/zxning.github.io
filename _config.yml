@@ -1,11 +1,11 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl: http://www.mazhuang.org
-url: http://www.mazhuang.org
+baseurl: http://zxning.github.io
+url: http://zxning.github.io
 date_format: "ordinal"
-title: 靠谱-ing
-author: Zhuang Ma 
+title: zxning
+author: zxning 
 paginate: 9
 
 # ---------------- #
@@ -32,4 +32,4 @@ collections:
 # ---------------- #
 #      Comments    #
 # ---------------- #
-duoshuo_short_name: mazhuang
+duoshuo_short_name: zxning

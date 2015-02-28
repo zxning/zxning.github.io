@@ -1,9 +1,9 @@
-靠谱-ing
+zxning
 =================
 
 My personal blog hosted on Github Pages.
 
-链接：[靠谱-ing](http://www.mazhuang.org)
+链接：[zxning](http://zxning.github.io)
 
 ###想要坚持的原则
 
