@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-categories: blog
+categories: 初出茅庐
 description: first post
 keywords: hello
 ---
