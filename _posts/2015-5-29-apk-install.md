@@ -1,10 +1,11 @@
 ---
 layout: post
-title:关联PC端APK，方便给手机安装apk(尤其是PC里没有手机驱动的情况)
+title: 关联PC端APK，方便给手机安装apk(尤其是PC里没有手机驱动的情况)
 categories:Android
 description: some word here
 keywords: keyword1, keyword2
 ---
+
 我猜测哈~很多手机端测试同学从PC上获取build之后，再使用adb install命令将apk安装到手机中,但是有没有那样的情况呢，输入命令之后，提示“找不到设备”，因为没有安装驱动……纳尼？！……关键时刻怎能如此掉链子, 神器登场--等等等---安装器
 
 **环境配置一：**
