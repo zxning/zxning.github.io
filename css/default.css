@@ -10,7 +10,9 @@ body {
   padding: 2% 5% 5% 5%;
   width: 700px;
   line-height: 150%;
-  border: 1px solid LightGrey;
+  border-bottom: 1px solid LightGrey;
+  border-left: 1px solid LightGrey;
+  border-right: 1px solid LightGrey;
 }
 
 H1, H2, H3, H4 {
@@ -104,7 +106,7 @@ div.nav {
   padding: 0 5% 0 5%;
   width: 700px;
   height: 1.5em;
-  line-height: 150%;
+  line-height: 500%;
   font-size: 1em;
 }
 
