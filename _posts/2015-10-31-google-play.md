@@ -22,5 +22,7 @@ keywords: keyword1, keyword2
 3. 使用root explorer工具把已经安装的上面两个APP从用户目录（data/app）复制到系统目录（system/APP）
 4. 关机，开机
 5. OK，Google商店可以打开了，【问题2】解决
-6. 在设置>账户中添加Google账户并登陆(可在手机端的Google商店直接安装)，连接PC，在网页的Google商店上就能够下载对应的APP了【问题1】解决  
+6. 在设置>账户中添加Google账户并登陆(可在手机端的Google商店直接安装)，连接PC，在网页的Google商店上就能够下载对应的APP了【问题1】解决
+
+  
 但是，使用两款手机（索尼L36h， 三星note3）均不会再闪退，但是从设置中添加Google账户会导致设置无响应——作为后续TODO
