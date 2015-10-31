@@ -16,7 +16,7 @@ keywords: keyword1, keyword2
 
  
 [google Play.apk](http://pan.baidu.com/s/1dDAuCmt)  
-[GoogleServicesFramework.apk](http://pan.baidu.com/s/1gdlocUn)
+[GoogleServicesFramework.apk](http://pan.baidu.com/s/1gdlocUn)  
 
 2. 安装上面两个软件，不要打开
 3. 使用root explorer工具把已经安装的上面两个APP从用户目录（data/app）复制到系统目录（system/APP）
