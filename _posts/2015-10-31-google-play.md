@@ -12,8 +12,10 @@ keywords: keyword1, keyword2
 
 
 前提：手机root并安装了root exlpore工具  
-1. 下载GoogleServicesFramework.apk和google Play.apk
-[google Play.apk](http://pan.baidu.com/s/1dDAuCmt)
+1. 下载GoogleServicesFramework.apk和google Play.apk,下面是这两个apk的下载链接  
+
+ 
+[google Play.apk](http://pan.baidu.com/s/1dDAuCmt)  
 [GoogleServicesFramework.apk](http://pan.baidu.com/s/1gdlocUn)
 
 2. 安装上面两个软件，不要打开
