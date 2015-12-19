@@ -8,12 +8,12 @@ keywords: keyword1, keyword2
 
 ### 概述
 Fiddler 的 session 都是按照顺序展示的，在序号前面则是 session 的快捷图标，如下图所示：
-
-
+<left>
 ![2015-12-19-1](/images/2015-12-19-1.png)
+</left>
 
 ### session图标
-1. ![2015-12-19-2](/images/2015-12-19-2.png) session被客户端应用，Fiddler或服务器中止。
+1. <left>![2015-12-19-2](/images/2015-12-19-2.png)</left> session被客户端应用，Fiddler或服务器中止。
 
 
 例如：当我打开一个网页后，网页的response还没有发送完的时候，我又重新触发这个网页的请求，session的图标则会这样呈现，这种情况下选中session，右键 > 属性 > X-ABORTED-WHEN查看请求被取消的时间，像我上面描述的情况一般X-ABORTED-WHEN都是SendingResponse。这种情况就是正常的，但是有一种情况就存在问题了。同样还是这个图标，但是session的返回值为5XX，这种应该就是服务器的问题，需要另外跟进
