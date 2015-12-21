@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用python搭建临时server并访问一个接口
-categories: [工作效率]
+categories: [Python]
 description: some word here
 keywords: keyword1, keyword2
 ---
@@ -12,23 +12,24 @@ keywords: keyword1, keyword2
 2. 有个json文件
 ### 服务器的解决办法
 1. 使用现成的测试服务器
-- **结论:**不打算采用，不想用别人的服务器，想用自己的服务器
+> 结论:不打算采用，不想用别人的服务器，想用自己的服务器
+
 2. 有Linux虚机，自己搭一个服务器
-- **结论：**在一台服务器上放置了json文件后，访问不到，后来了解到是跨域的原因，建议后面在该服务器上安装xampp重新配置环境，先进入ToDoList吧
+> 结论：在一台服务器上放置了json文件后，访问不到，后来了解到是跨域的原因，建议后面在该服务器上安装xampp重新配置环境，先进入ToDoList吧
+
 3. 曾经有个大神跟我说可以使用python临时在本机搭一个，只需要使用一句命令即可
--**具体操作：**
+> 具体操作：
 1. 在某路径下启动cmd，运行如下命令
 
-···
+```
 python  -m SimpleHTTPServer 8081
-···
+```
 2. 将json文件放到该目录下
-3. 在浏览器中输入：http://localhost:8081/JsonTest.json 回车
-- **遇到问题：**json是直接下载的，而不是直接在浏览器上打开的，后来请教了一同事后，发现，只要将json文件的后缀修改成html则可以解决这个问题
+3. 在浏览器中访问这个接口：[](http://localhost:8081/JsonTest.json) 
 
 ### json文件
 1. 仿照服务器上的json文件写了一个，如下：
-···
+```
 {
 	"roommate": [{
 		"photo": "https%3A%2F%2Fencrypted-tbn2.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQfkJ91eZhts0Y-nYFa8HpMwldZoBJ43hdpatT_FRGTCPRtnTHv",
@@ -69,5 +70,7 @@ python  -m SimpleHTTPServer 8081
 		"category_name": "%E9%82%AE%E7%AE%B1"
     }]
 }
-···
+```
+### 遇到的问题
+在浏览器中输入[](http://localhost:8081/JsonTest.json)回车后，浏览器直接将json下载，而不是直接展示在浏览器里。为了解决这个问题，请教了一同事后，发现，只要将后缀改成json替换成HTML则可以解决这个问题
 

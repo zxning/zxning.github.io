@@ -14,4 +14,4 @@ keywords: keyword1, keyword2
 2. 搜索 json view,安装
 3. 再次打开刚才的接口，如下所示
 ![](/images/2015-12-20-json2.png)
-json 的格式很清楚，而且
+json 的格式很清楚，而且json可以按格式展开或者收缩
