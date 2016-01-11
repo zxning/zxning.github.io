@@ -28,7 +28,7 @@ keywords: keyword1, keyword2
 
 2. 服务端差量更新包是怎么来的？
    
-   - 使用工具，拆分工具bsdiff 和补丁合成工具bspatch![](http://share.weiyun.com/635ae514582298d43a9cf6042c757272)
+   - 使用工具，拆分工具bsdiff 和补丁合成工具bspatch[工具的下载地址](http://share.weiyun.com/635ae514582298d43a9cf6042c757272)
    - 使用命令：``` bsdiff oldfile newfile patchfile ``` 和``` bspatch oldfile newfile patchfile```
 
    根据两个不同版本的二进制文件，使用bsdiff生成差量包，将差量包放在服务器上，当用户下载差量包之后，再使用dspatch合成
@@ -36,7 +36,7 @@ keywords: keyword1, keyword2
 3. 根据以上分析，验证服务端的diff是否可用
 
     - 使用bspatch命令，将服务端生成的差量包和本地的安装包进行合并，得到new.apk并进行安装，得出以下错误码
-    ![]((/images/2016-1-11.png)
+    ![](/images/2016-1-11.png)
     - 使用1.0版本和2.0版本，使用bsdiff，生成差量包是可以安装成功的
     
     因此，可以确认是服务端差量包的问题
