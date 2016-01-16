@@ -79,5 +79,5 @@ python  -m SimpleHTTPServer 8081
 ```
 
 ### 遇到的问题
-在浏览器中输入[](http://localhost:8081/JsonTest.json)回车后，浏览器直接将json下载，而不是直接展示在浏览器里。为了解决这个问题，请教了一同事后，发现，只要将后缀改成json替换成HTML则可以解决这个问题
+在浏览器中输入```http://localhost:8081/JsonTest.json```回车后，浏览器直接将json下载，而不是直接展示在浏览器里。为了解决这个问题，请教了一同事后，发现，只要将后缀改成json替换成HTML则可以解决这个问题
 
