@@ -1,0 +1,14 @@
+---
+layout: post
+title: template page
+categories: [cate1, cate2]
+description: some word here
+keywords: keyword1, keyword2
+---
+
+### 标题1
+1. test
+2. test
+### 标题2
+1. 你好
+2. 你好
