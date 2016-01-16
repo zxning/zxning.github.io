@@ -18,8 +18,7 @@ keywords: keyword1, keyword2
 2. 下载GoogleServicesFramework.apk和google Play.apk,下面是这两个apk的下载链接  
 
 [google Play.apk](http://pan.baidu.com/s/1dDAuCmt)  
-[GoogleServicesFramework.apk](http://pan.baidu.com/s/1gdlocUn)  
-
+[GoogleServicesFramework.apk](http://pan.baidu.com/s/1gdlocUn)
 3. 安装上面两个软件，不要打开
 4. 使用root explorer工具把已经安装的上面两个APP从用户目录（data/app）复制到系统目录（system/APP）
 5. 关机，开机
