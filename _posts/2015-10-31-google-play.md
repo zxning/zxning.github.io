@@ -15,10 +15,7 @@ keywords: keyword1, keyword2
 ### 解决方法
 
 1. 手机root并安装了root exlpore工具  
-2. 下载GoogleServicesFramework.apk和google Play.apk,下面是这两个apk的下载链接  
-
-[google Play.apk](http://pan.baidu.com/s/1dDAuCmt)  
-[GoogleServicesFramework.apk](http://pan.baidu.com/s/1gdlocUn)
+2. 下载[GoogleServicesFramework.apk](http://pan.baidu.com/s/1dEk4sxz)和[google Play.apk](http://pan.baidu.com/s/1nuimjUx)
 3. 安装上面两个软件，不要打开
 4. 使用root explorer工具把已经安装的上面两个APP从用户目录（data/app）复制到系统目录（system/APP）
 5. 关机，开机
