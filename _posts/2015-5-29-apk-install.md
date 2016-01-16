@@ -9,9 +9,11 @@ keywords: keyword1, keyword2
 
 我猜测哈~很多手机端测试同学从PC上获取build之后，再使用adb install命令将apk安装到手机中,但是有没有那样的情况呢，输入命令之后，提示“找不到设备”，因为没有安装驱动……纳尼？！……关键时刻怎能如此掉链子, 神器登场--等等等---安装器
 
-### 环境配置一：  
+### 环境配置一
+ 
 前提：安装了搜狗输入法    
 步骤： 
+
 1. 桌面-->右键-->新建 快捷方式
 2. 在%public%\SogouInput\USBDT    路径下找到MobAssHelper.exe
 3. 复制MobAssHelper.exe的路径并传参数 -addasso  ，如下所示
@@ -21,9 +23,11 @@ keywords: keyword1, keyword2
 6. 大功告成，以后再也不用担心安装启动神马东西啦……哈哈~……so easy
 
 
-### 环境配置二：
+### 环境配置二
+
 前提：安装了搜狗 浏览器  
 步骤： 
+
 1. 右键-->新建 快捷方式
 2. 在%appdata%\Roaming\SogouExplorer\Bin\Android 路径下找到MobAssHelper.exe
 3. 复制 MobAssHelper.exe的路径并传参数 -addasso  ，如下所示
