@@ -23,14 +23,13 @@ keywords: keyword1, keyword2
 3. 进入目标路径 cd /search/test
 4. 输入命令```ls -l``` 嗯~能看到我放的文件，再使用cat命令读取文件，嗯~可以读取。问题又来了，Linux下怎么对文件进行排序呢？经过百度，发现，Linux下有个强大的sort命令：
 
-*注：
-sort -n ：以数值进行排序，避免出现10比2大的情况
-sort -k 2:对第二列进行升序的排序
-sort -t [：以[作为分隔符
-*
+    sort -n ：以数值进行排序，避免出现10比2大的情况
+    sort -k 2:对第二列进行升序的排序
+    sort -t [：以[作为分隔符
 
-5. ```` sort -n -k 2 -t [ test ```
-* 注：文件名叫test*
+
+5. ``` sort -n -k 2 -t [ test ```
+    注：文件名叫test
 
 6. 结果如下：
 ![](/images/2015-12-20-sort2.png)
