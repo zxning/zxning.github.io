@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Python|提示错误：SyntaxError: Non-ASCII character '\xe5' in file
+title: Python|提示错误：SyntaxError: Non-ASCII character in file
 categories: [Python]
 description: some word here
 keywords: keyword1, keyword2
 ---
 
 ### 问题描述
-运行Python代码后，出现错误：```SyntaxError: Non-ASCII character '\xe5' in file，but no encoding declared```
+运行Python代码后，出现错误：
 
-奇怪的是，我在代码的开头已经增加``` # -*- coding: UTF-8 -*-   ```，如下所示：
+```SyntaxError: Non-ASCII character '\xe5' in file，but no encoding declared```
+
+奇怪的是，我在代码的开头已经增加
+
+``` # -*- coding: UTF-8 -*-   ```，如下所示：
 ![](/images/2016-1-25-coding.png)
 
 ### 问题分析

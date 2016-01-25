@@ -49,20 +49,22 @@ if element1:
 
 ### 问题分析
 
-1. 根据错误提示，找到出现问题的地方是： ``` if element1 != '文字2':```
-    - **加print输出**，如下所示：
-    ```
-    str = '文字2'
-    print [element1]
-    print [str]
-    ```
-    - **结果：**
-    ```
-    [u'\u6d41\u884c\u699c']  
-    ['\xe6\xb5\x81\xe8\xa1\x8c\xe6\xa6\x9c']  
-    UnicodeWarning: Unicode unequal comparison failed to convert both arguments to Unicode - interpreting them as being unequal  
-    ```
+1. 根据错误提示，找到出现问题的地方是比对文字：
+
+ ``` if element1 != '文字2':```
+
+- **加print输出**，如下所示：
+
+```
+str = '文字2'
+print [element1]
+print [str]
+```
+- **结果：**
+![](/images/2016-1-25-Unicode2.png)
+
 2. google 错误提示，得到如下答案：
+
     > your error message indicates that you aren't comparing unicode objects. You are probably comparing a unicode object to a str object
     *[链接地址](http://stackoverflow.com/questions/18193305/python-unicode-equal-comparison-failed)*
 
