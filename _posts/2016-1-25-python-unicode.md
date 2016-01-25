@@ -12,7 +12,9 @@ keywords: keyword1, keyword2
 UnicodeWarning: Unicode unequal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
 
 代码的细节：
+
 ```
+
 # -*- coding: UTF-8 -*-  
 '''
 Created on 2016.1.25日
@@ -44,10 +46,10 @@ if element1:
     else:
         print 'pass'
 ```
+
 ### 问题分析
 
 1. 根据错误提示，找到出现问题的地方是： ``` if element1 != '文字2':```
-    
     - **加print输出**，如下所示：
     ```
     str = '文字2'
@@ -61,7 +63,8 @@ if element1:
     UnicodeWarning: Unicode unequal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
     ```
 2. google 错误提示，得到如下答案：
-
+    > your error message indicates that you aren't comparing unicode objects. You are probably comparing a unicode object to a str object
+    *[连接地址](http://stackoverflow.com/questions/18193305/python-unicode-equal-comparison-failed)*
 
 
 ### 解决方案
