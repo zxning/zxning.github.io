@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 提示错误：Python unicode equal comparison failed
+title: Python|提示错误：unicode equal comparison failed
 categories: [Python]
 description: some word here
 keywords: keyword1, keyword2
@@ -9,7 +9,7 @@ keywords: keyword1, keyword2
 ### 问题描述
 代码运行后提示如下错误：
 
-UnicodeWarning: Unicode unequal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+``` UnicodeWarning: Unicode unequal comparison failed to convert both arguments to Unicode - interpreting them as being unequal```
 
 代码的细节：
 
@@ -58,19 +58,20 @@ if element1:
     ```
     - **结果：**
     ```
-    [u'\u6d41\u884c\u699c']
-    ['\xe6\xb5\x81\xe8\xa1\x8c\xe6\xa6\x9c']
-    UnicodeWarning: Unicode unequal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+    [u'\u6d41\u884c\u699c']  
+    ['\xe6\xb5\x81\xe8\xa1\x8c\xe6\xa6\x9c']  
+    UnicodeWarning: Unicode unequal comparison failed to convert both arguments to Unicode - interpreting them as being unequal  
     ```
 2. google 错误提示，得到如下答案：
     > your error message indicates that you aren't comparing unicode objects. You are probably comparing a unicode object to a str object
-    *[连接地址](http://stackoverflow.com/questions/18193305/python-unicode-equal-comparison-failed)*
+    *[链接地址](http://stackoverflow.com/questions/18193305/python-unicode-equal-comparison-failed)*
 
 
 ### 解决方案
 两种
 
 1. 都转换成Unicode进行比较
+
 ```
 if element1:
     if element1 != u'文字2':
