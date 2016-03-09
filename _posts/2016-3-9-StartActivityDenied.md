@@ -23,10 +23,9 @@ keywords: keyword1, keyword2
 ![](/images/2016-3-9-1.png)
 
 ### 问题分析: 使用log
-
 将log中使用的命令在cmd中运行后，同样出现错误，如下
 ![](/images/2016-3-9-2.png)
-根据错误提示：该activity没有导出，猜测程序的AndroidManifest对该activity声明时，export=false。但是我之前曾经在一个手机上成功启动过该activity。请教大神后，大神腿短可能是因为那个手机上的 adb 有 root权限。问题分为两方面：
+根据错误提示：该activity没有导出，猜测程序的AndroidManifest对该activity声明时，export=false。But,我之前曾经在一个手机上成功启动过该activity。请教大神后，大推断可能是因为那个手机上的 adb 有 root权限。问题分为两方面：
 
 1. 使用su运行上面的命令。
 2. 现在使用的手机，adb是否有root权限,如果没有，是否可以提权 
@@ -41,9 +40,9 @@ keywords: keyword1, keyword2
 2. 使用adb root之后提示''' adbd cannot run as root in production build''',一方面大神说有app可以解决这个问题，另一方面搜索adb root之后，发现大家都在推荐一个超级adb的app
 3. 安装 adbd insecure 之后，勾选如下图所示
 ![](/images/2016-3-9-3.png)
-
+4. 重启adb，运行appium，成功调起activity.Oh~~Yeah
 *注：下载adbd  insecure 之后，由于下载的版本比较低，而我使用的是Android5.1系统的手机，因此出现devices not found 和offline 两种问题，分别在不同的手机上，后来下载最新版本后，这个问题就解决了*
-4. 重启启动adb，问题得到解决
+
 
 ### 总结
 1. 使用appium的过程中要学会查看log
