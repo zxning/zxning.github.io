@@ -15,9 +15,9 @@ keywords: keyword1, keyword2
 ### 二、解决方案1
 利用在线时间戳转换工具进行转换，例如：
 
-(工具1)[http://tool.chinaz.com/Tools/unixtime.aspx]；
+[工具1](http://tool.chinaz.com/Tools/unixtime.aspx)
 
-(工具2)[http://www.epochconverter.com/]。
+[工具2](http://www.epochconverter.com/)
 
 *注：工具2的优点是不用去掉时间戳的后三位，可以全部复制之后进行转换。工具1之前需要摘掉后三位进行转换，现在也可以直接复制全部内容进行转换了*
 
