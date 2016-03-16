@@ -8,7 +8,7 @@ keywords: keyword1, keyword2
 
 ### 一、问题描述
 测试过程中需要读懂配置文件中的时间戳才能进一步完成测试，例如：
-!()[/images/2016-3-16-1.png]
+![](/images/2016-3-1.png)
 问题是：如何快速将时间戳转换成人可识别的时间呢
 
 
@@ -38,30 +38,27 @@ keywords: keyword1, keyword2
 1. 移动到xbin的时候，会提示目录只有只读权限，如下图所示
 !()[/images/2016-3-16-2.png]
 
+**解决方法：**
 
-
-> **解决方法：**
 > a. adb shell su
 > b. mount -o remount rw /system
 > c. 然后copy成功
 
-
 2. 将busybox拷贝到xbin目录下成功后，输入busybox，弹出如下错误
-!()[/images/2016-3-16-3.png]
+![](/images/2016-3-16-3.png)
 
+**解决方法：**
 
-> **解决方法：**
 > a. 进入xbin目录下
-> b. 给busybox 777权限···chmod 777 busybox···
+> b. 给busybox 777权限```chmod 777 busybox```
 > c. 然后再输入busybox，则能看到busybox的版本，以及使用方法的相关信息，然后就可以使用busybox的date命令进行时间戳转换了。如下图所示：
-!()[/images/2016-3-16-4.png]
+![](/images/2016-3-16-4.png)
 
-!()[/images/2016-3-16-5.png]
-
+![](/images/2016-3-16-5.png)
 
 
 3. 已经将busybox拷贝到手机中，但是使用时出现busybox:not found
-!()[/images/2016-3-16-6.png]
+![](/images/2016-3-16-6.png)
 
 > **解决方法:** 没有将busybox拷贝到system/xbin的目录下。
 
