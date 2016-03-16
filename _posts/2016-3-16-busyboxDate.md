@@ -27,7 +27,9 @@ keywords: keyword1, keyword2
 当然，要使用busybox命令，首先需要手机中存在busybox，在adb shell下直接输入busybox，查看是否存在，如不存在则返回“busybox: not found”，解决方法：
 
 **1. 拷贝本地busybox到手机，adb push "d:\busybox" /data/local/tmp/**
+
 **2. 拷贝busybox到system/xbin下面**
+
 **3. 修改busybox的权限**
 
 
@@ -40,7 +42,9 @@ keywords: keyword1, keyword2
 **解决方法：**
 
 a. adb shell su
+
 b. mount -o remount rw /system
+
 c. 然后copy成功
 
 
@@ -50,8 +54,11 @@ c. 然后copy成功
 **解决方法：**
 
 a. 进入xbin目录下
+
 b. 给busybox 777权限```chmod 777 busybox```
+
 c. 然后再输入busybox，则能看到busybox的版本，以及使用方法的相关信息，然后就可以使用busybox的date命令进行时间戳转换了。如下图所示：
+
 
 ![](/images/2016-3-16-4.png)
 
@@ -61,7 +68,7 @@ c. 然后再输入busybox，则能看到busybox的版本，以及使用方法的
 - 已经将busybox拷贝到手机中，但是使用时出现busybox:not found
 ![](/images/2016-3-16-6.png)
 
-> **解决方法:** 没有将busybox拷贝到system/xbin的目录下。
+**解决方法:** 没有将busybox拷贝到system/xbin的目录下。
 
 *注：*/system/xbin目录相当于在windons已经被加入到path路径下
 
