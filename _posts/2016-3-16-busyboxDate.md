@@ -41,9 +41,9 @@ keywords: keyword1, keyword2
 
     **解决方法：**
 
-    a. adb shell su
-    b. mount -o remount rw /system
-    c. 然后copy成功
+    1. adb shell su
+    2. mount -o remount rw /system
+    3. 然后copy成功
 
 
 2. 将busybox拷贝到xbin目录下成功后，输入busybox，弹出如下错误
@@ -51,9 +51,9 @@ keywords: keyword1, keyword2
 
     **解决方法：**
 
-    a. 进入xbin目录下
-    b. 给busybox 777权限```chmod 777 busybox```
-    c. 然后再输入busybox，则能看到busybox的版本，以及使用方法的相关信息，然后就可以使用busybox的date命令进行时间戳转换了。如下图所示：
+    1. 进入xbin目录下
+    2. 给busybox 777权限```chmod 777 busybox```
+    3. 然后再输入busybox，则能看到busybox的版本，以及使用方法的相关信息，然后就可以使用busybox的date命令进行时间戳转换了。如下图所示：
 
 
     ![](/images/2016-3-16-4.png)
