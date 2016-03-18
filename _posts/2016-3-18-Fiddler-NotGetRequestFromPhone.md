@@ -7,7 +7,7 @@ keywords: keyword1, keyword2
 ---
 
 ### 问题描述
-Fiddler突然不能抓手机端的请求了（可以抓PC端的请求），核对了以下信息，确认都正确
+Fiddler突然不能抓手机端的请求了（可以抓PC端的请求），核对了以下信息，确认都正确:
 
 1.	PC端和手机端均能上网
 2.	ping手机端IP ，能ping通
