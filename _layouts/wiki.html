@@ -1,24 +1,36 @@
-{% include header.html %}
-<div id="container">
-    {% include navigation.html %}
-    <div id="main">
-        <h2> {{ page.title }} </h2>
-        {{ content }}
-        <ul class="prev_next">
-            {% if page.previous.url %}
-            <li>
-                <span>上一篇</span>
-                <a href="{{page.previous.url}}">{{page.previous.title}}</a>
-            </li>
-            {% endif %}
-            {% if page.next.url %}
-            <li>
-                <span>下一篇</span>
-                <a href="{{page.next.url}}">{{page.next.title}}</a>
-            </li>
-            {% endif %}
-        </ul>
-        {% include duoshuo.html %}
+---
+layout: default
+---
+<section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
+<div class="container">
+  <div class="columns">
+    <div class="column three-fourths">
+      <div class="collection-title">
+        <h1 class="collection-header">{{ page.title }}</h1>
+      </div>
     </div>
+  </div>
 </div>
-{% include footer.html %}
+</section>
+<!-- / .banner -->
+<section class="container content">
+<div class="columns">
+  <div class="column three-fourths" >
+    <article class="article-content markdown-body">
+    {{ content }}
+    {% include article-footer.html %}
+    </article>
+    <div class="share">
+      {% include sns-share.html %}
+    </div>
+    <div class="comment">
+      {% include comments.html %}
+    </div>
+  </div>
+  <div class="column one-fourth">
+    {% include sidebar-search.html %}
+    {% include sidebar-post-nav.html %}
+  </div>
+</div>
+</section>
+<!-- /section.content -->

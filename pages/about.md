@@ -1,9 +1,38 @@
 ---
 layout: page
-title: zxning
-description: zxning的个人简介。
+title: About
+description: zxning 的个人简介。
 keywords: zxning
-permalink: /about.html
+comments: true
+menu: 关于
+permalink: /about/
 ---
 
 zxning的个人简介。
+
+## 联系
+
+* GitHub：[@mzlogin](https://github.com/mzlogin)
+
+## Skill Keywords
+
+#### Software Engineer Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_software_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
+
+#### Mobile Developer Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_mobile_app_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
+
+#### Windows Developer Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_windows_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>

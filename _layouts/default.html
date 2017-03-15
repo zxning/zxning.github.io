@@ -1,12 +1,3 @@
 {% include header.html %}
-<div id="container">
-    {% include navigation.html %}
-    <div id="main">
-        <h2> {% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %} </h2>
-        {{ content }}
-        <hr>
-        <a href="http://www.mazhuang.org">靠谱-ing</a><br>
-        <a href="http://chenxiaoyoyo.github.io">Yoyo</a>
-    </div>
-</div>
+    {{ content }}
 {% include footer.html %}
