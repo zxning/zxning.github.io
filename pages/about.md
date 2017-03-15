@@ -12,7 +12,7 @@ zxning的个人简介。
 
 ## 联系
 
-* GitHub：[@mzlogin](https://github.com/mzlogin)
+* GitHub：[@zxning](https://github.com/zxning)
 
 ## Skill Keywords
 

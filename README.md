@@ -5,7 +5,7 @@ My personal blog hosted on Github Pages.
 
 链接：[zxning](http://zxning.github.io)
 
-###想要坚持的原则
+### 想要坚持的原则
 
 1. 简约，尽量每个页面都不展示多余的内容。
 
@@ -13,10 +13,10 @@ My personal blog hosted on Github Pages.
 
 3. 言之有物，不做无痛之呻吟。
 
-###写博注意点
+### 写博注意点
 
-1. keywords以C++这样的开头会有问题。
+1. keywords 以 C++ 这样的开头会有问题。
 
-1. toc link中的字母要全小写。
+1. toc link 中的字母要全小写。
 
-###思考中的问题
+### 思考中的问题
