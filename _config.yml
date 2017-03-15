@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-    url: https://zxning.github.io
+url: https://zxning.github.io
 date_format: "ordinal"
 title: zxning
 subtitle: "宁静致远"
