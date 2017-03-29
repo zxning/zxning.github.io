@@ -9,7 +9,7 @@ keywords: keyword1, keyword2
 
 ### 问题一、
 
-问题描述：在小米3手机上使用adb：在小米3手机上使用adb install命令的时候提示Failure [INSTALL_CANCELED_BY_USER]，实际上在手机上并没有弹出确认弹窗
+问题描述：在小米3手机上使用adb install命令的时候提示Failure [INSTALL_CANCELED_BY_USER]，实际上在手机上并没有弹出确认弹窗
 
 解决方法：需要在小米3手机上，开发者选项中打开usb安装
 ![](/images/2017-3-16-1.png)
