@@ -101,11 +101,11 @@ disqus_username:
 # 在使用 disqus 的时候可点击显示多说评论框
 #lazy_load_duoshuo: true
 gitment：
-    owner：zxning
-    repo；blog-comments
-    oauth：
-        client_id：57ecea1162a181a64d24
-        client_secret：3421134f3b0e824428411951cccc27d198e16444
+    owner:zxning
+    repo:blog-comments
+    oauth:
+        client_id:57ecea1162a181a64d24
+        client_secret:3421134f3b0e824428411951cccc27d198e16444
 
 # ---------------- #
 #    Analytics     #
