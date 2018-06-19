@@ -9,7 +9,7 @@ keywords: keyword1, keyword2
 ### 问题描述
 
 下载apk包，使用adb install命令安装时提示：没有签名，见如下截图
-![](/images/-1.png)
+![](/images/2018-6-19-1.png)
 
 ### 解决方案
 
