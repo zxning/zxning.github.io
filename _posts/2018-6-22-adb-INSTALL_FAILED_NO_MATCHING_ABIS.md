@@ -1,7 +1,7 @@
 ---
 layout: post
 title: adb报错|INSTALL_FAILED_NO_MATCHING_ABIS
-categories: [adb]
+categories: [adb,Android]
 description: some word here
 keywords: keyword1, keyword2
 ---
@@ -12,13 +12,13 @@ keywords: keyword1, keyword2
 ### 二、解决方案
 根据网上了解到的情况，应该是要更换模拟器的CPU架构。更换模拟器的image，如下图所示：
 
-![](/images/2018-6-22-1.png)
+  ![](/images/2018-6-22-1.png)
 
 ### 三、如何确认APP的架构
 1. 将apk解压
 2. 查一下so文件所在目录，如下所示：
 
-![](/images/2018-6-22-2.png)
+  ![](/images/2018-6-22-2.png)
 3. 因此，可以确定该apk支持的CPU 架构是armeabi-v7a
 
 ### 四、Android 设备的CPU类型(通常称为”ABIs”)
