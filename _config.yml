@@ -102,14 +102,14 @@ disqus_username:
 #lazy_load_duoshuo: true
 gitment:
     owner: zxning
-    repo: blog-comments
+    repo: zxning.github.io
     oauth:
         client_id: 57ecea1162a181a64d24
         client_secret: 3421134f3b0e824428411951cccc27d198e16444
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: zxning
-    repo: blog-comments
+    repo: zxning.github.io
     clientID: 57ecea1162a181a64d24
     clientSecret: 3421134f3b0e824428411951cccc27d198e16444
 # 在使用其它评论组件时可点击显示 Disqus
