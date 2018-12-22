@@ -102,7 +102,7 @@ disqus_username:
 #lazy_load_duoshuo: true
 gitment:
     owner: zxning
-    repo: zxning.github.io
+    repo: blog-comments
     oauth:
         client_id: 57ecea1162a181a64d24
         client_secret: 3421134f3b0e824428411951cccc27d198e16444
