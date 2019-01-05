@@ -9,6 +9,7 @@ keywords: keyword1, keyword2
 ### 一、问题描述
 测试过程中需要读懂配置文件中的时间戳才能进一步完成测试，例如：
 ![](/images/2016-3-16-1.png)
+
 问题是：如何快速将时间戳转换成人可识别的时间呢
 
 
@@ -22,6 +23,7 @@ keywords: keyword1, keyword2
 *注：工具2的优点是不用去掉时间戳的后三位，可以全部复制之后进行转换。工具1之前需要摘掉后三位进行转换，现在也可以直接复制全部内容进行转换了*
 
 ### 三、解决方案2
+
 使用busybox 的date命令。使用方法：busybox date -d @1457894523
 
 当然，要使用busybox命令，首先需要手机中存在busybox，在adb shell下直接输入busybox，查看是否存在，如不存在则返回“busybox: not found”，解决方法：
@@ -33,7 +35,7 @@ keywords: keyword1, keyword2
 **3. 修改busybox的权限**
 
 
-###四、遇到的问题及解决方案
+### 四、遇到的问题及解决方案
 
 
 1. 移动到xbin的时候，会提示目录只有只读权限，如下图所示
@@ -68,4 +70,6 @@ keywords: keyword1, keyword2
 
 *注：*/system/xbin目录相当于在windons已经被加入到path路径下
 
+### 写在最后
 
+后来发现解决方案2应该是有问题，先备忘，后续有了root手机的时候再确认下
