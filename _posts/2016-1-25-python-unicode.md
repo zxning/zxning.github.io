@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python|提示错误：unicode equal comparison failed
+title: Python | unicode equal comparison failed
 categories: [Python]
 description: some word here
 keywords: keyword1, keyword2

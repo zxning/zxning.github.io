@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python|提示错误：Non-ASCII character in file
+title: Python | Non-ASCII character in file
 categories: [Python]
 description: some word here
 keywords: keyword1, keyword2
