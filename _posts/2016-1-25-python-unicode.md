@@ -51,17 +51,17 @@ if element1:
 
 1. 根据错误提示，找到出现问题的地方是比对文字：
 
- ``` if element1 != '文字2':```
+    ``` if element1 != '文字2':```
 
-- **加print输出**，如下所示：
+    **加print输出**
 
-```
-str = '文字2'
-print [element1]
-print [str]
-```
-- **结果：**
-![](/images/2016-1-25-Unicode2.png)
+    ```
+    str = '文字2'
+    print [element1]
+    print [str]
+    ```
+     **结果如下所示：**
+    ![](/images/2016-1-25-Unicode2.png)
 
 2. google 错误提示，得到如下答案：
 
@@ -69,20 +69,19 @@ print [str]
     *[链接地址](http://stackoverflow.com/questions/18193305/python-unicode-equal-comparison-failed)*
 
 
-### 解决方案
-两种
+### 解决方案(两种)
 
 1. 都转换成Unicode进行比较
 
-```
-if element1:
+    ```
+    if element1:
     if element1 != u'文字2':
         print 'fail'
     else:
         print 'pass'
-```
+    ```
 
-2.  在代码开头引入 ```from __future__ import unicode_literals  ```
+2.  在代码开头引入 ```from __future__ import unicode_literals ``` 
 
 
 
