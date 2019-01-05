@@ -1,6 +1,6 @@
 ---
 layout: post
-title: adb问题总结
+title: adb | INSTALL_PARSE_FAILED _NO_CERTIFICATES
 categories: [adb]
 description: some word here
 keywords: keyword1, keyword2
