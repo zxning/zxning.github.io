@@ -20,7 +20,7 @@ keywords: keyword1, keyword2
 如果只操作一两次就还行，如果每天要操作成百上千次就会在这个小步骤上浪费一些时间。还有一种方法就是双击session，能够达到Inspectors tab下面，但是 Fiddler 总是根据该session的类型，从而自动决定该session的Response tab，例如，双击一个image类型的session，则response tab 一定优先在ImageView tab 上，有没有优化的空间，可以自定义显示吗？
     
 - 解决方案： 在QuickExec输入命令``` PREFS SET fiddler.ui.inspectors.response.alwaysuse “json” ```, 双击session，则可以看到Response tab被自动定位到JSON上了
-- 同理，PREFS SET ```fiddler.ui.inspectors.request.alwaysuse "webforms"```可以使session的resquest默认显示在webforms的tab上
+- 同理，```PREFS SET fiddler.ui.inspectors.request.alwaysuse "webforms"```可以使session的resquest默认显示在webforms的tab上
 
 ### 快速找到所有的post请求
 
