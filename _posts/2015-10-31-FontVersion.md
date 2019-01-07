@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 原来字体也是有版权的啊
-categories: 业界常识
+categories: [win]
 description: some word here
 keywords: "keyword1, keyword2"
 published: true

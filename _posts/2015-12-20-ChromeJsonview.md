@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chrome 好用插件推荐-json view
-categories: [工作效率]
+categories: [Interface]
 description: some word here
 keywords: keyword1, keyword2
 ---

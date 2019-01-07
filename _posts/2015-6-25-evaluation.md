@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 耗电量测试横向评测流程
-categories: 测试方法
+categories: [Android]
 description: some word here
 keywords: keyword1, keyword2
 ---

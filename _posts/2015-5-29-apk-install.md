@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关联PC端APK，方便给手机安装apk-尤其是PC里没有手机驱动的情况
-categories: 工作效率
+categories: [apk]
 description: some word here
 keywords: keyword1, keyword2
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 删除文件被提示“文件占用”怎么破
-categories: [工作效率]
+categories: [win]
 description: some word here
 keywords: keyword1, keyword2
 ---

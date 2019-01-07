@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fiddler | session的含义
-categories: [测试工具]
+categories: [Fiddler]
 description: some word here
 keywords: keyword1, keyword2
 ---

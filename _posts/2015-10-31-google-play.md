@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 非原生手机安装Google商店闪退的问题
-categories: [遇到的问题]
+categories: [Android]
 description: some word here
 keywords: keyword1, keyword2
 ---
