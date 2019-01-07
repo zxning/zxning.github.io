@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python | ImportError: No module named requests
+title: Python | ImportError：No module named requests
 categories: [python]
 description: some word here
 keywords: keyword1, keyword2
