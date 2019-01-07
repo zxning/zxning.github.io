@@ -24,7 +24,7 @@ keywords: keyword1, keyword2
 
 ![](/images/2019-1-7-1.png)
 
-### 问题原因
+### 查找原因
 
 由于Mac上可以同时安装多个Python版本，系统默认版本Python2.7。Pycharm我选择的版本是3.7。
 
