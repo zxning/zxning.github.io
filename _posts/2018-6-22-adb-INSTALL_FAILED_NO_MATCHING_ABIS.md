@@ -1,7 +1,7 @@
 ---
 layout: post
 title: adb | INSTALL_FAILED_NO_MATCHING_ABIS
-categories: [adb,Android]
+categories: [Android]
 description: some word here
 keywords: keyword1, keyword2
 ---
