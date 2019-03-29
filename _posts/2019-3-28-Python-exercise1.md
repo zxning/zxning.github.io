@@ -87,7 +87,18 @@ else:
 ```
 
 ```
-### 题目5：turtle正方形绘制
+### 题目5：数值运算
+
+获得用户输入的一个字符串，格式如下：M OP N   其中，M和N是任何数字，OP代表一种操作，表示为如下四种：+，—，*，/(加减乘除)根据OP，输出M OP N的运算结果，同意保存小数点后2位。
+
+注意：M和OP、OP和N之间可以存在多个空格，不考虑输入错误情况
+
+### 实现如下：
+```
+
+```
+
+### 题目6：turtle正方形绘制
 
 使用turtle库，绘制一个正方形
 
@@ -110,10 +121,37 @@ turtle.left(90)
 turtle.forward(150)
 turtle.left(90)
 turtle.forward(150)
+turtle.done()
+
 ```
+### 题目7：turtle六边形绘制
 
+使用turtle库，绘制一个六边形
 
+### 实现如下：
 
-
+```
+#绘制六边形
+import turtle
+turtle.setup(650,650,200,200)
+turtle.penup()
+turtle.fd(-250)
+turtle.pendown()
+turtle.pencolor("black")
+turtle.pensize(5)
+#turtle.seth()
+turtle.forward(150)
+turtle.left(60)
+turtle.forward(150)
+turtle.left(60)
+turtle.forward(150)
+turtle.left(60)
+turtle.forward(150)
+turtle.left(60)
+turtle.forward(150)
+turtle.left(60)
+turtle.forward(150)
+turtle.done()
+```
 
 
