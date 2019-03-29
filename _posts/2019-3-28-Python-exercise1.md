@@ -11,7 +11,7 @@ keywords: keyword1, keyword2
 人民币和美元间汇率固定为：1美元=6.78人民币。程序可以接受人民币或美元输入，转换为美元或人民币输出。人民币采用RMB标识，美元USD标识，符号和数值之间没有空格。
 
 注意：
-1. 这是一个OJ题目，获得输入请使用input() ；
+1. 获得输入请使用input() ；
 2. 不提示输出格式错误，结果小数点后保留两位。
 
 
@@ -29,7 +29,7 @@ else:
     print("输入格式错误")
 ```
 
-### 题目2：温度转换
+### 题目2：温度转换1
 
 编写程序将用户输入华氏度转换为摄氏度，或将输入的摄氏度转换为华氏度
 
@@ -56,7 +56,29 @@ elif TempStr[0] in ('C','c'):
 else:
     print("输入格式错误")
 ```
-### 题目3：数字形式转换
+### 题目3：温度转换2
+
+转换算法同上，要求如下：
+
+1. 输入输出的摄氏度可采用大小写字母C结尾，温度可以是整数或小数，如：12.34C指摄氏度12.34度
+2. 输入输出的华氏度可采用大小写字母F结尾，温度可以是整数或小数，如：87.65F指摄氏度87.65度
+3. 输出保留小数点后两位，输入格式错误时，输出提示：输入格式错误
+4. 使用input()获得测试用例输入时，不要增加提示字符串
+
+### 实现如下：
+
+```
+TempStr = input("")
+if TempStr[-1] in ['F','f']:
+    C = (eval(TempStr[0:-1]) - 32)/1.8
+    print("{:.2f}C".format(C))
+elif TempStr[-1] in ('C','c'):
+    F = 1.8 * eval(TempStr[0:-1]) + 32
+    print("{:.2f}F".format(F))
+else:
+    print("输入格式错误")
+```
+### 题目4：数字形式转换
 
 获得一个用户输入的正整数，输出该数字对应的中文表示
 
@@ -65,16 +87,30 @@ else:
 ```
 
 ```
-### 题目4：：
+### 题目5：turtle正方形绘制
+
+使用turtle库，绘制一个正方形
 
 ### 实现如下：
 
 ```
-
+#PythonDraw.py
+import turtle
+turtle.setup(650,350,200,200)
+turtle.penup()
+turtle.fd(-250)
+turtle.pendown()
+turtle.pencolor("black")
+turtle.pensize(5)
+#turtle.seth()
+turtle.forward(150)
+turtle.left(90)
+turtle.forward(150)
+turtle.left(90)
+turtle.forward(150)
+turtle.left(90)
+turtle.forward(150)
 ```
-
-
-
 
 
 
