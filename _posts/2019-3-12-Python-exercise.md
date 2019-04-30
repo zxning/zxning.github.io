@@ -59,6 +59,7 @@ while n < 10:
         continue # continue语句会直接继续下一轮循环，后续的print()语句不会执行
     print(n)
 ```
+
 ### 题目4：请定义一个函数quadratic(a, b, c)，接收3个参数，返回一元二次方程：ax^2 + bx + c = 0的两个解。提示：计算平方根可以调用math.sqrt()函数：
 
 ### 实现如下：
@@ -111,10 +112,52 @@ for i in range(scale + 1):
 print("\n"+"执行结束".center(scale//2, '-'))
 ```
 
+### 题目5：数字类型转换
+获得用户输入的一个正整数输入，输出该数字对应的中文字符表示。0到9对应的中文字符分别是：零一二三四五六七八九
 
+### 实现如下：
 
+```
+a = "零一二三四五六七八九十"
+b = input()
+for c in b:
+    print(a[eval(c)],end='')
+```
 
+### 题目6：绘制风轮
 
+### 实现如下：
+
+```
+import turtle                                        
+                                                     
+turtle.pencolor("black")                             
+turtle.pensize(5)                                    
+                                                     
+turtle.seth(135)  #改变行进方向                            
+turtle.fd(150)    #在当前方向前进150像素                      
+turtle.left(90)   #左转90度                             
+turtle.circle(150,45)  #半径150像素，画45度的圆               
+turtle.goto(0,0)       #坐标回到起点                       
+                                                     
+turtle.seth(225)                                     
+turtle.fd(150)                                       
+turtle.left(90)                                      
+turtle.circle(150,45)                                
+turtle.goto(0,0)                                     
+                                                     
+turtle.seth(315)                                     
+turtle.fd(150)                                       
+turtle.left(90)                                      
+turtle.circle(150,45)                                
+turtle.goto(0,0)                                     
+                                                     
+turtle.seth(45)                                      
+turtle.fd(150)                                       
+turtle.left(90)                                      
+turtle.circle(150,45)                                
+turtle.goto(0,0)                                     
+```
 
 
 
