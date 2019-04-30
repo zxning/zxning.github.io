@@ -90,6 +90,27 @@ else:
     print(x)
 ```
 
+### 题目4：打印文本进度条
+
+### 实现如下：
+
+```
+#\r回退，退格删除
+#刷新的本质就是删除旧的
+import time
+scale = 50
+print("执行开始".center(scale//2, "-"))
+start = time.perf_counter()
+for i in range(scale + 1):
+    a = '*' * i
+    b = '.' * (scale - i)
+    c = (i/scale) * 100
+    dur = time.perf_counter() - start
+    print("\r{:^3.0f}%[{} -> {}]{:.2f}s".format(c, a, b, dur), end="")
+    time.sleep(0.1)
+print("\n"+"执行结束".center(scale//2, '-'))
+```
+
 
 
 
