@@ -26,11 +26,6 @@ elif 28 < bmi < 32:
 else:
     print("严重肥胖")
 
-#题目：计算1~100的和
-sum = 0
-for x in range(101):
-    sum = sum + x
-print(sum)
 ```
 
 ### 题目2：逐个打印出L中的名字
@@ -159,6 +154,16 @@ turtle.circle(150,45)
 turtle.goto(0,0)                                     
 ```
 
+### 题目7:计算1~100的和
+
+### 实现如下:
+
+```
+sum = 0
+for x in range(101):
+    sum = sum + x
+print(sum)
+```
 
 
 
