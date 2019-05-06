@@ -90,13 +90,17 @@ else:
 template = "零一二三四五六七八九"               
 a = input()                           
 for i in a:                           
-    print(template[eval(i)], end='')  
+    print(template[eval(i)], end='')  #输出后，结尾不自动换行
 ```
 ### 题目5：数值运算
 
-获得用户输入的一个字符串，格式如下：M OP N   其中，M和N是任何数字，OP代表一种操作，表示为如下四种：+，—，*，/(加减乘除)根据OP，输出M OP N的运算结果，同意保存小数点后2位。
-注意：M和OP、OP和N之间可以存在多个空格，不考虑输入错误情况
+获得用户输入的一个字符串，格式如下：M OP N  
 
+其中，M和N是任何数字，OP代表一种操作，表示为如下四种：+，—，*，/(加减乘除)
+
+根据OP，输出M OP N的运算结果，同意保存小数点后2位。
+
+注意：M和OP、OP和N之间可以存在多个空格，不考虑输入错误情况
 
 ### 实现如下：
 ```
@@ -112,13 +116,8 @@ for i in a:
 ```
 #PythonDraw.py
 import turtle
-turtle.setup(650,350,200,200)
-turtle.penup()
-turtle.fd(-250)
-turtle.pendown()
 turtle.pencolor("black")
 turtle.pensize(5)
-#turtle.seth()
 turtle.forward(150)
 turtle.left(90)
 turtle.forward(150)
@@ -138,13 +137,8 @@ turtle.done()
 ```
 #绘制六边形
 import turtle
-turtle.setup(650,650,200,200)
-turtle.penup()
-turtle.fd(-250)
-turtle.pendown()
 turtle.pencolor("black")
 turtle.pensize(5)
-#turtle.seth()
 turtle.forward(150)
 turtle.left(60)
 turtle.forward(150)
@@ -158,5 +152,17 @@ turtle.left(60)
 turtle.forward(150)
 turtle.done()
 ```
+
+### 代码优化后：
+```
+#绘制六边形
+import turtle              
+turtle.pensize(5)          
+for i in range(6):         
+    turtle.forward(150)    
+    turtle.left(60)        
+turtle.done()               
+```
+
 
 
