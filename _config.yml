@@ -5,7 +5,7 @@ baseurl:
 url: https://zxning.github.io
 date_format: "ordinal"
 title: zxning
-subtitle: "宁静致远"
+subtitle: "适然有作"
 description: "zxning 的个人博客"
 keywords: zxning
 favicon: /favicon.ico
@@ -17,9 +17,9 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: zxning
-organization: Sogou, Inc.
-organization_url: https://www.sogou.com
-location: Beijing, China
+organization: NIXI, Inc.
+organization_url: 
+location: XI'AN, China
 email: ninger517@gmail.com
 
 # ---------------- #
