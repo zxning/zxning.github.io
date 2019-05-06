@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python 语言程序设计练习题
+title: 《python 语言程序设计》练习题
 categories: [python]
 description: some word here
 keywords: keyword1, keyword2
