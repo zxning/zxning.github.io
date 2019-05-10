@@ -91,20 +91,22 @@ else:
 ### 实现如下：
 
 ```
+
 #\r回退，退格删除
 #刷新的本质就是删除旧的
 import time
-scale = 50
-print("执行开始".center(scale//2, "-"))
-start = time.perf_counter()
+scale = 50                              #总长度是50
+print("执行开始".center(scale//2, "-"))  #执行开始居中，其他的填充-，总长度为25
+start = time.perf_counter()             #测量时间函数，记录当前的时间，一般是连续调用取差值
 for i in range(scale + 1):
     a = '*' * i
-    b = '.' * (scale - i)
-    c = (i/scale) * 100
-    dur = time.perf_counter() - start
+    b = '.' * (scale - i)               # *和.加起来共50个
+    c = (i/scale) * 100                 # 显示的百分比
+    dur = time.perf_counter() - start   # 从当前时间减去之前记录的时间就是这个过程花费的时间
     print("\r{:^3.0f}%[{} -> {}]{:.2f}s".format(c, a, b, dur), end="")
     time.sleep(0.1)
-print("\n"+"执行结束".center(scale//2, '-'))
+print("\n"+"执行结束".center(scale//2, '-'))#上面一段代码结尾是end=”“，是不回车的，本行代码执行前要先回车
+
 ```
 
 ### 题目5：数字类型转换
