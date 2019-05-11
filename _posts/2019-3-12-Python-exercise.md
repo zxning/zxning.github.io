@@ -118,11 +118,18 @@ print("\n"+"执行结束".center(scale//2, '-'))#上面一段代码结尾是end=
 ### 实现如下：
 
 ```
+a = ["零","一","二","三","四","五","六","七","八","九"]
+b = input("")
+for i in range(len(b)):
+    print(a[eval(b[i])],end = "")
+```
+```
 a = "零一二三四五六七八九十"
 b = input()
 for c in b:
     print(a[eval(c)],end='')
 ```
+
 
 ### 题目6：绘制风轮
 
