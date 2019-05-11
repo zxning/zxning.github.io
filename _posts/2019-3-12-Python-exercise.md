@@ -69,8 +69,9 @@ a = int(a)
 b = int(b)
 c = int(c)
 def quadratic(a, b, c):
-    if not isinstance(a+b+c, (int,float)):
-        raise TypeError('bad operand type')
+    if not isinstance(a+b+c, (int,float)):       #isinstance判断一个对象是不是已知类型。这里额意思是判断a+b+c是不是整型或者浮点型，如果不是已知的这两种类型，则执行下一句
+        raise TypeError('bad operand type')      #使用raise来抛出一个异常（异常类型必须是Python提供的），并输出：操作数类型错误
+
 
 derta = b * b - 4 * a * c
 if a!=0:
@@ -86,21 +87,23 @@ else:
     print(x)
 ```
 
-### 题目4：打印文本进度条
+### 题目4：打印文本进度条，输出如下图所示:
+
+![](/images/2019-5-11-1.png)
 
 ### 实现如下：
 
 ```
 
 #\r回退，退格删除
-#刷新的本质就是删除旧的
+#刷新的本质就是删除旧的,sleep一会，再输入新内容
 import time
 scale = 50                              #总长度是50
-print("执行开始".center(scale//2, "-"))  #执行开始居中，其他的填充-，总长度为25
+print("执行开始".center(scale//2, "-"))  #"执行开始"居中，其他的填充-，总长度为25
 start = time.perf_counter()             #测量时间函数，记录当前的时间，一般是连续调用取差值
 for i in range(scale + 1):
-    a = '*' * i
-    b = '.' * (scale - i)               # *和.加起来共50个
+    a = '*' * i                         #先填充的第一部分字符*
+    b = '.' * (scale - i)               #后填充的第二部分.  *和.加起来共50个
     c = (i/scale) * 100                 # 显示的百分比
     dur = time.perf_counter() - start   # 从当前时间减去之前记录的时间就是这个过程花费的时间
     print("\r{:^3.0f}%[{} -> {}]{:.2f}s".format(c, a, b, dur), end="")
