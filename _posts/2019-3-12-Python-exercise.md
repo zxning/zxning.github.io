@@ -62,6 +62,13 @@ while n < 10:
         continue # continue语句会直接继续下一轮循环，后续的print()语句不会执行
     print(n)
 ```
+```
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    else:
+        print(i)
+```
 
 ### 题目4：请定义一个函数quadratic(a, b, c)，接收3个参数，返回一元二次方程：ax^2 + bx + c = 0的两个解。提示：计算平方根可以调用math.sqrt()函数：
 
