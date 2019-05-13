@@ -42,6 +42,14 @@ L = ['Bart', 'Lisa', 'Adam']
 for x in L:
     print('Hello,',x,'!')
 ```
+
+```
+L = ['Bart', 'Lisa', 'Adam']
+for x in L:
+    print('Hello,%s!' % x)
+```
+
+
 ### 题目3：打印出10以内的奇数
 
 ### 实现如下：
