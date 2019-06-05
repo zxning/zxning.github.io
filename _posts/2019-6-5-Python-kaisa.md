@@ -55,3 +55,24 @@ for i in range(len(input)):
         else:
             print(input[i], end="")
 ```
+### 优化如下：
+
+```
+input = input("")
+characterStr1 = "abcdefghijklmnopqrstuvwxyz"
+characterStr2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+for i in range(len(input)):
+    pos = characterStr1.find(input[i])
+    if pos != -1:
+        c = (pos + 3) % 26
+        print(characterStr1[c], end="")
+    else:
+        pos = characterStr2.find(input[i])
+        if pos != -1:
+            c = (pos + 3) % 26
+            print(characterStr2[c], end="")
+        else:
+            print(input[i], end="")
+```
+
