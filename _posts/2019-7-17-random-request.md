@@ -139,11 +139,11 @@ keywords: keyword1, keyword2
             print(did)
             print(did[0])
             if int(did[0], 16) % 3 == 0:
-                print("A")
+                print("A方案")
             elif int(did[0], 16) % 3 == 1:
-                print("B")
+                print("B方案")
             else:
-                print("C")
+                print("C方案")
             return did
         
         
