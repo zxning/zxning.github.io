@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 随机32位ID，拼接URL请求获取返回值后，根据首字母返回不同的结果
+title: 随机32位ID，拼接URL并请求，验证返回结果和ID的关系
 categories: [python，interface]
 description: some word here
 keywords: keyword1, keyword2
@@ -18,12 +18,13 @@ keywords: keyword1, keyword2
 2. 首字母是0,3,6,9,c,e下载json1
 3. 首字母是1,4,7,a,d,f下载json2
 4. 首字母是2,5,8,b,d下载json3
+5. 寻找json1,json2,json3中不同的关键字
 
 根据以上任务内容，需求拆分如下：
 
 1. 随机生成32位用户ID
-2. 用ID和基本的URL去拼接请求获得返回值，拿出返回值中的特定项
-3. 校验ID的首位和第二部获得的结果是否一致
+2. 用ID和基本的URL去拼接请求获得返回值，拿出返回值中的唯一项
+3. 校验ID的首位和第二步获得的结果是否一致
 
 ### 分模块功能实现如下：
 
@@ -161,9 +162,7 @@ keywords: keyword1, keyword2
 
 
     if __name__ == '__main__':
-        id_random()
         new_url()
-
     ```
 
 
