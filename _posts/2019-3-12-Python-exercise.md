@@ -75,31 +75,33 @@ for i in range(10):
 ### 实现如下：
 
 ```
+# -*- coding: utf-8 -*-
+
 import math
 
-a = input('请输入a的值：')
-b = input('请输入b的值：')
-c = input('请输入c的值：')
-a = int(a)
-b = int(b)
-c = int(c)
+
 def quadratic(a, b, c):
     if not isinstance(a+b+c, (int,float)):       #isinstance判断一个对象是不是已知类型。这里额意思是判断a+b+c是不是整型或者浮点型，如果不是已知的这两种类型，则执行下一句
         raise TypeError('bad operand type')      #使用raise来抛出一个异常（异常类型必须是Python提供的），并输出：操作数类型错误
-
-
-derta = b * b - 4 * a * c
-if a!=0:
-    if derta < 0:
-        print('该方程没有实根')
+    derta = b * b - 4 * a * c
+    if a!=0:
+        if derta < 0:
+            print('该方程没有实根')
+        else:
+            x1 = (-b + math.sqrt(b*b - 4*a*c))/2*a
+            x2 = (-b - math.sqrt(b*b - 4*a*c))/2*a
+            print(x1)
+            print(x2)2
     else:
-        x1 = (-b + math.sqrt(b*b - 4*a*c))/2*a
-        x2 = (-b - math.sqrt(b*b - 4*a*c))/2*a
-        print(x1)
-        print(x2)
-else:
-    x = -(c / b)
-    print(x)
+        x = -(c / b)
+        print(x)
+
+
+if __name__ == '__main__':
+    a = int(input('请输入a的值：'))
+    b = int(input('请输入b的值：'))
+    c = int(input('请输入c的值：'))
+    quadratic(a, b, c)
 ```
 
 ### 题目4：打印文本进度条，输出如下图所示:
