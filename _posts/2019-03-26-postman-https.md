@@ -31,7 +31,7 @@ postman可以作为proxy抓获手机端的HTTP，HTTPS请求，这样获取的�
 
 2. 继续上面的步骤，切换到Cerficates 的tab上，点击Add cerficate,如下图
 
-![](/images/2020-03-26-2.png)
+![](/images/2020-03-26-3-3.png)
 
 网上大部分的方法都是说自己生成证书然后上传，试过后发现并不能用，终于有个人说可以用Charles的公钥，私钥，说的很有道理，果然可以。将Charles导出的文件分别上传到postman的对应位置，域名随便填写的m.baidu.com。注意：不要写自己将要自己的域名，会通不过
 
