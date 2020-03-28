@@ -15,7 +15,7 @@ APP接入Google play之后，如何开展测试以及可能遇到的问题，做
 3. 需要管理员配置沙河测试人员：即将上一步申请的gmail账号的账号添加上
 4. 在测试手机上用刚才申请的账号登录Google账户，并且访问邀请链接，点击按钮become tester（邀请链接一般都是：替换其中的包名即可： https://play.google.com/apps/testing/com.xxx.xxxxx）
 
-   ![](/images/2020-03-27-1-1.png)
+    ![](/images/2020-03-27-1-1.png)
 
 
 ### 二、测试点
@@ -34,11 +34,11 @@ APP接入Google play之后，如何开展测试以及可能遇到的问题，做
 
 2. 点击购买后，需要添加付款方式
 
-   ![](/images/2020-03-27-3.png)
+    ![](/images/2020-03-27-3.png)
 
    原因：账号没有被加入到测试组中，可以到这个链接下查看 https://play.google.com/apps/testing/com.xxx.xxxxx （后面是包名）, 会显示这个
-
-   ![](/images/2020-03-27-4.png)
+    
+    ![](/images/2020-03-27-4.png)
 
 3. 系统正在处理您的订单
 
@@ -64,5 +64,10 @@ APP接入Google play之后，如何开展测试以及可能遇到的问题，做
 
 5. 反复操作订阅和取消订阅后，谷歌商店的已订阅页面会出现查询不到订单的情况，这种情况很难处理，最简单的办法就是换个账号，让出现错误的账号过几天再用
 
-[参考链接：](https://developer.android.google.cn/google/play/billing/billing_testing)
+6. 取消订阅后如果有对应的业务逻辑一定要注意“一律拒绝”逻辑
+
+   ![](/images/2020-03-27-5.png)
+
+
+   [参考链接：https://developer.android.google.cn/google/play/billing/billing_testing](https://developer.android.google.cn/google/play/billing/billing_testing)
 
