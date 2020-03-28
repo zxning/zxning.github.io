@@ -68,5 +68,7 @@ APP接入Google play之后，如何开展测试以及可能遇到的问题，做
 
    ![](/images/2020-03-27-5.png)
 
+
+
 [参考链接：https://developer.android.google.cn/google/play/billing/billing_testing](https://developer.android.google.cn/google/play/billing/billing_testing)
 
