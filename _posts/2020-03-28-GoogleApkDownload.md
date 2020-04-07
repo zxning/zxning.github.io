@@ -17,7 +17,7 @@ keywords: keyword1, keyword2
 
    ![](/images/2020-03-28-1.png)
 
-### 第二种：APKTURE
+### 第二种：APKPURE
 
    [地址：https://apkpure.com/cn/](https://apkpure.com/cn/)
 
