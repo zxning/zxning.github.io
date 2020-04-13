@@ -127,7 +127,12 @@ simple_jekyll_search:
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id:
+    analytics_id: UA-163474513-1
+    adsense:
+        footer: true
+        sidebar: true
+        content_header: true
+        content_footer: false
 
 # ---------------- #
 #      Datas       #
