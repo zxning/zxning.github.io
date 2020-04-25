@@ -4,6 +4,7 @@ title: python | 自动化实现从Jenkins上下载最新包并自动安装
 categories: [python]
 description: some word here
 keywords: keyword1, keyword2
+topmost: true
 ---
 
 ## 需求：
@@ -37,6 +38,59 @@ keywords: keyword1, keyword2
 
 ### 代码实现
 ![](/images/2019-1-10-2.png)
+
+
+### 优化后
+本次主要优化的封装逻辑
+···
+#!/usr/bin/python
+# coding=utf-8
+
+import requests
+import os
+from requests.auth import HTTPBasicAuth
+import time
+
+def installApk():
+    url = "http://192.168.1.11:8080/job/AndroidYellow/lastSuccessfulBuild/artifact/Yellow/app/build/outputs/apk/googleplay/debug/Lemon2.1.1_googleplay_debug.apk"
+
+    # 登录Jenkins并请求URL
+    response = requests.get(url, auth=HTTPBasicAuth("build","build"))
+    # 提取URL的文件名
+    filename = os.path.basename(url)
+    # 打开上述文件并写到本地
+    with open(filename, 'wb') as apk:
+        apk.write(response.content)
+
+    # 对本地文件执行adb命令
+    os.system("adb install " + filename)
+
+
+def DeleteData():
+    os.system("adb shell rm -fr /sdcard/.boo*")
+
+
+def UnstallApk():
+    package_name = "com.social.lemon"
+    # os.popen的返回结果是在一个文件中，需要读取，而且读取结果是列表
+    result = str(os.system("adb shell pm list packages | grep lemon"))
+    if result.find(package_name):
+        os.system("adb uninstall " + package_name)
+        time.sleep(10)
+    else:
+        pass
+
+if __name__ == '__main__':
+    DeleteData()
+    UnstallApk()
+    installApk()
+
+···
+
+
+
+
+
 
 ### 需要优化的地方
 1. 代码中应该尽量少用sleep，在使用adb uninstall 的时候，应该是拿到回调之后再去执行adb install 
