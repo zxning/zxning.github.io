@@ -6,11 +6,11 @@ description: some word here
 keywords: keyword1, keyword2
 ---
 
-一、### 问题描述
+### 一、问题描述
 
 公司的业务都在国外，测试的过程中经常需要抓接口定位问题，而有的接口需要翻墙，用手机端翻墙的话，Charles上就完全看不到信息了
 
-二、### 问题解决
+### 二、问题解决
 
 1. 手机连接Charles
 2. 电脑翻墙
