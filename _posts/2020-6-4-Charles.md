@@ -16,15 +16,15 @@ keywords: keyword1, keyword2
 2. 电脑翻墙
 3. 查看自己电脑端shadowsocket的HTTP 代理设置监听地址，如图所示，我的是127.0.0.1，端口1087
 
-![](/images/2020-06-04-2.png)
+   ![](/images/2020-06-04-2.png)
 
 4. 设置Charles，proxy > External Proxy Settings, 勾选Use external proxy servers,勾选web proxy 和 Secure Web Proxy, 填写上面的端口号。如图
 
-![](/images/2020-06-04-1.png)
+   ![](/images/2020-06-04-1.png)
 
 5. 在手机端访问一个需要翻墙的接口，或者直接在手机端浏览器里面使用谷歌浏览器，大功告成
 
-三、### 最后
+### 三、最后
 
 感谢小胖同学
 
