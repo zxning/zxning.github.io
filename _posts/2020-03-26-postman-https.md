@@ -1,7 +1,7 @@
 ---
 layout: post
 title: postman抓HTTPS的包
-categories: [interface]
+categories: [postman]
 description: some word here
 keywords: keyword1, keyword2
 ---

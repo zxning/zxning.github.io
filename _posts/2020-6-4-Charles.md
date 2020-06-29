@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 手机连接Charles ，有需要访问外网的接口该怎么办
-categories: [iOS]
+categories: [Charles]
 description: some word here
 keywords: keyword1, keyword2
 ---

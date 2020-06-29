@@ -1,7 +1,7 @@
 ---
 layout: post
 title: appium | log循环提示：0 device connect
-categories: [Android]
+categories: [Appium]
 description: some word here
 keywords: keyword1, keyword2
 ---

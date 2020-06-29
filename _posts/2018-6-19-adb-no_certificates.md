@@ -1,7 +1,7 @@
 ---
 layout: post
 title: adb | INSTALL_PARSE_FAILED _NO_CERTIFICATES
-categories: [adb]
+categories: [Android]
 description: some word here
 keywords: keyword1, keyword2
 ---

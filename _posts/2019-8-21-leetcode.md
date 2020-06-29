@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LeetCode练习题
-categories: [python，interface]
+categories: [python]
 description: some word here
 keywords: keyword1, keyword2
 ---

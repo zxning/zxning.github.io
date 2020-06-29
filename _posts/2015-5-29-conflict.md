@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 纠结的事情
-categories: 奇怪的心情
+categories: [something]
 description: some word here
 keywords: keyword1, keyword2
 ---

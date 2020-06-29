@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Excel 单元格中增加下拉菜单并且填充不同的颜色
-categories: [工作效率]
+categories: [win]
 description: some word here
 keywords: keyword1, keyword2
 ---
