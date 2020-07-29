@@ -19,14 +19,14 @@ keywords:
 
 ### 2. 解决方案
 
-在运行的py文件中，本处指的是：test_in_login.py，增加如下内容
+在运行的py文件中，本处指的是：test_in_login.py，增加项目的绝对路径，如下所示：
 
 ```
 import os
 import sys
-sys.path.append("/Users/zhaoxining/Documents/api_pytest")
+sys.path.append("/Users/zz/Documents/api_pytest")
 ```
 
 再次运行，结果如下：
 
-![](/images/2020-07-29-2.png)
+![](/images/2020-07-29-3.png)
