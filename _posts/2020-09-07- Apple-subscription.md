@@ -28,4 +28,4 @@ keywords:
 ![](/images/2020-09-07-1.png)
 
 
-[参考链接：](https://help.apple.com/app-store-connect/#/dev7e89e149d)
+[参考链接：https://help.apple.com/app-store-connect/#/dev7e89e149d](https://help.apple.com/app-store-connect/#/dev7e89e149d)
